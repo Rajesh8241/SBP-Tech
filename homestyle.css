@@ -1,0 +1,313 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* .container-1 {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .img-1 {
+    height: 92%;
+    width: 55%;
+} */
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: seashell;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 14px 16px;
+    /* position: fixed; */
+}
+
+.navcnt {
+    color: black;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+.img-1{
+    height:900px; 
+    width:900px;
+}
+
+.navcnt:hover {
+    color: red;
+}
+.home-page {
+    height: 900px;
+    width: 100%;
+    padding: 20px;
+}
+.home-page {
+    background-color:lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    /* position: relative; */
+    /* left: -75%; */
+}
+#menubar{
+    display: none;
+}   
+/* .image{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid black;
+    padding: 4px;
+} */
+.mainpage {
+    width: 100%;
+    height: 800px;
+    /* padding: 0 10px; */
+    display: flex;
+    /* background: #626cd6; */
+    /* background-image: url(./backgroung\ img.jpg); */
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+/* Login form styling */
+.login_form {
+    width: 100%;
+    max-width: 435px;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    padding: 41px 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+    /* z-index: 9999; */
+}
+.login_form h3 {
+    font-size: 20px;
+    text-align: center;
+}
+/* Google & Apple button styling */
+.login_form .login_option {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.login_form .login_option .option {
+    /* width: calc(100% / 2 - 12px); */
+    width: 150px;
+}
+.login_form .login_option .option a {
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #F8F8FB;
+    border: 1px solid #DADAF2;
+    border-radius: 5px;
+    margin: 34px 0 24px 0;
+    text-decoration: none;
+    color: #171645;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+.login_form .login_option .option a:hover {
+    background: #ededf5;
+    border-color: #626cd6;
+}
+.login_form .login_option .option a img {
+    max-width: 25px;
+}
+label{
+    color: whitesmoke;
+}
+.sign_up{
+    color: whitesmoke;
+}
+.f-pass{
+    color:whitesmoke;
+    font-weight: 900; 
+    font-size: 18px;
+}
+.f-pass:hover{
+    color: #4954d0;
+}
+.login_form p {
+    text-align: center;
+    font-weight: 500;
+}
+.login_form .separator {
+    position: relative;
+    margin-bottom: 24px;
+}
+/* Login option separator styling */
+.login_form .separator span {
+    background: #fff;
+    z-index: 1;
+    padding: 0 10px;
+    position: relative;
+}
+.login_form .separator::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    height: 1px;
+    background: #C2C2C2;
+    display: block;
+}
+form .input_box label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+/* Input field styling */
+form .input_box input {
+    width: 100%;
+    height: 57px;
+    border: 1px solid #DADAF2;
+    border-radius: 5px;
+    outline: none;
+    background: #F8F8FB;
+    font-size: 17px;
+    padding: 0px 20px;
+    margin-bottom: 25px;
+    transition: 0.2s ease;
+}
+form .input_box input:focus {
+    border-color: whitesmoke;
+}
+form .input_box .password_title {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+form .input_box {
+    position: relative;
+}
+a {
+    text-decoration: none;
+    color: #0916a0;
+    font-weight: 500;
+}
+a:hover {
+    text-decoration: underline;
+}
+/* Login button styling */
+form button {
+    width: 100%;
+    height: 56px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #626CD6;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 28px;
+    transition: 0.3s ease;
+}
+form button:hover {
+    background: #4954d0;
+}
+label{
+    display: none;
+}
+.option:active{
+    transform: scale(0.9) ;
+    /* background: radial-gradient(circle farthest-corner at 10% 20%, rgba(255,94,247,1) 17.8% rgba(2,245,255,1) 100.2%); */
+    transition: 0.5s;
+}
+input:active , button:active{
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+.navcnt:active{
+    transform: scale(0.9);
+    transition: 0.5s; 
+
+}
+
+.button-86 {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-86::after,
+.button-86::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+.button-86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+
+.button-86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.button-86:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.button-86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.button-86:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}

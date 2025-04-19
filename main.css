@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: seashell;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 14px 16px;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    animation: slideDown 0.6s ease-out;
+}
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.navcnt {
+    color: black;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+.navcnt:hover {
+    color: red;
+    transform: scale(1.1);
+}
+.logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+.logo:hover {
+    transform: rotate(360deg);
+}
+#menubar{
+    display: none;
+}  
+label{
+    display: none;
+}
+.mainpage {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffffff, #dbe9ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Text Block */
+.mainpage > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    opacity: 0;
+    animation: textFadeUp 1.5s ease forwards;
+    animation-delay: 1s;
+}
+
+.main-title {
+    font-size: 3.5rem;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.main-title1 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    list-style: none;
+    padding: 0;
+}
+li{
+    color: red;
+}
+.main-title1 li {
+    margin: 5px 0;
+    opacity: 0;
+    animation: fadeInList 0.6s ease forwards;
+}
+
+.main-title1 li:nth-child(1) { animation-delay: 1.6s; }
+.main-title1 li:nth-child(2) { animation-delay: 1.8s; }
+.main-title1 li:nth-child(3) { animation-delay: 2s; }
+.main-title1 li:nth-child(4) { animation-delay: 2.2s; }
+.main-title1 li:nth-child(5) { animation-delay: 2.4s; }
+.main-title1 li:nth-child(6) { animation-delay: 2.6s; }
+
+/* Image Styling */
+.m-img {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transform: translate(-50%, -50%);
+}
+
+/* Image Animations */
+.img1, .img2, .img3, .img4 {
+    top: 50%;
+    left: 50%;
+}
+
+.img1 { animation: moveTopLeft 1s ease forwards; animation-delay: 0.2s; }
+.img2 { animation: moveTopRight 1s ease forwards; animation-delay: 0.4s; }
+.img3 { animation: moveBottomLeft 1s ease forwards; animation-delay: 0.6s; }
+.img4 { animation: moveBottomRight 1s ease forwards; animation-delay: 0.8s; }
+
+.m-img:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Animations */
+@keyframes moveTopLeft {
+    to { top: 20%; left: 20%; }
+}
+@keyframes moveTopRight {
+    to { top: 20%; left: 80%; }
+}
+@keyframes moveBottomLeft {
+    to { top: 80%; left: 20%; }
+}
+@keyframes moveBottomRight {
+    to { top: 80%; left: 80%; }
+}
+
+@keyframes textFadeUp {
+    from { opacity: 0; transform: translate(-50%, -40%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+@keyframes fadeInList {
+    to { opacity: 1; }
+}
+
+
+
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}

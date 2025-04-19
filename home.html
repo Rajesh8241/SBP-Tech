@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./homestyle.css">
+    <link rel="stylesheet" href="./tabletscreen.css">
+    <link rel="stylesheet" href="./mobilescreen.css">
+    <script src="https://kit.fontawesome.com/ed044b2611.js" crossorigin="anonymous"></script>
+   <title>PROJECT</title>
+</head>
+<body>
+   
+    <!-- <a href="./profile.html" id="profile">PROFILE</a> -->
+    <nav class="navbar">
+        
+        <img class="logo" src="./logo.avif" alt="logo"><span style="position: absolute;left: 100px;"><b style="font-size: 30px;">SBP TECH</b></span>
+        
+            <label for="menubar"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="menubar" >
+        
+       <div class="sub-menu">
+        <a class="navcnt" href="./index.html">HOME</a>
+        <a class="navcnt" href="./ourproducts.html">OUR PRODUCTS</a>
+        <!-- <a class="navcnt" href="#about us">ABOUT US</a> -->
+        <a class="navcnt" href="./profile.html">ABOUT</a>
+        <a class="navcnt" href="./home.html">LOGIN&nbsp;<i class="fa-solid fa-right-to-bracket"></i></a>
+       </div>
+    </nav>
+    <!-- <h1>HOME PAGE</h1> -->
+
+   <div class="mainpage">
+   <div class="m-img" style="display: grid;grid-template-columns: auto auto; position:fixed; z-index: -1; opacity: 0.5;" >
+    <img src="./backgroung img.jpg" alt="" >
+    <img src="./backgroung img.jpg" alt="" >
+   </div>
+
+    <div class="login_form">
+        <!-- Login form container -->
+        <form>
+          <h3><b>Log in with</b></h3>
+          <div class="login_option">
+            <!-- Google button -->
+            <div class="option">
+              <a href="https://www.google.com/intl/en-GB/account/about/">
+                <i class="fa-brands fa-google"></i>
+                <span><b>Google</b></span>
+              </a>
+            </div>
+            <!-- Apple button -->
+            <div class="option">
+              <a href="https://www.icloud.com/">
+                <i class="fa-brands fa-apple"></i>
+                <span><b>Apple</b></span>
+              </a>
+            </div>
+          </div>
+          <!-- Login option separator -->
+          <p class="separator">
+            <span><b>or</b></span>
+          </p>
+          <!-- Email input box -->
+          <div class="input_box">
+            <label for="email" style="color: white;"><b>Email</b></label>
+            <input type="email" id="email" placeholder="Enter email address" required />
+          </div>
+          <!-- Paswwrod input box -->
+          <div class="input_box">
+            <div class="password_title">
+              <label for="password" style="color: white;"><b>Password</b></label>
+              <a href="" class="f-pass"><b>Forgot Password?</b></a>
+            </div>
+            <input type="password" id="password" placeholder="Enter your password" required />
+          </div>
+           <!-- Login button -->
+           <button class="button-86" role="button">LOGIN IN</button>
+          <p class="sign_up" style="font-size: 18px;font-weight: 900;"><b>Don't have an account? </b><a href=""><b style="color: red;font-size: 18px;font-weight: 900;">Sign up</b></a></p>
+        </form>
+      </div>
+   </div>
+            <!-- <img class="image" src="./home image.png" alt=""> -->
+            
+    
+        
+
+</body>
+</html>
